@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-left: 0px;
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 30px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+/* NavBar */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Slideshow */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slideshow {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Text over slideshow */
+.hero-text {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 40%;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+}
+
+.word-box {
+  display: inline-block;
+  background: yellow;
+  color: black;
+  padding: 2px 8px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .logo {
+    height: 60px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 6px;
+    display: none;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback - Joint Innovation Team</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="feedback.css"/>
+</head>
+<body style="background-image: url('feedback-bg.jpg'); background-size: cover; background-position: center;">
+  <header>
+    <nav class="navbar">
+      <div class="logo">Feedback</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="feedback-section">
+    <div class="overlay"></div>
+    <div class="feedback-container">
+      <h1>Your Feedback Matters</h1>
+      <p>
+        We value your opinion and strive to improve our services based on your insights.
+        Your honest feedback helps us grow and deliver better results. Whether it's a compliment,
+        a suggestion, or a concern, we want to hear from you! Please take a moment to share your
+        experience with us. It only takes a minute, but your words can make a big difference.
+      </p>
+
+      <div class="rating-preview">
+        ⭐⭐⭐⭐☆
+        <span class="rating-score">4.0 / 5</span>
+      </div>
+
+      <form id="feedback-form" action="https://tally.so/r/3XgZ7g" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Gmail ID" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" required />
+        <textarea name="message" placeholder="Write your feedback here..." required></textarea>
+
+        <label class="rating-label">Rate Us:</label>
+        <div class="rating-stars" id="rating-stars">
+          <input type="radio" name="rating" value="5" id="star5"><label for="star5">★</label>
+          <input type="radio" name="rating" value="4" id="star4"><label for="star4">★</label>
+          <input type="radio" name="rating" value="3" id="star3"><label for="star3">★</label>
+          <input type="radio" name="rating" value="2" id="star2"><label for="star2">★</label>
+          <input type="radio" name="rating" value="1" id="star1"><label for="star1">★</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+      </form>
+    </div>
+  </main>
+
+  <section class="testimonial-section">
+    <h2>What Our Users Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="user1.jpg" alt="User 1" class="testimonial-img">
+        <p><strong>Debashis Pattnaik</strong></p>
+        <p>Excellent service and very professional approach.</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="testimonial">
+        <img src="user2.jpg" alt="User 2" class="testimonial-img">
+        <p><strong>Ipsita Mohanti</strong></p>
+        <p>Great experience, loved the quick response from the team.</p>
+        <div class="stars">⭐⭐⭐⭐☆</div>
+      </div>
+      <div class="testimonial">
+        <img src="userb.jpg" alt="User 3" class="testimonial-img">
+        <p><strong>Subhransu Das</strong></p>
+        <p>Very helpful and trustworthy platform. Highly recommended.</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="feedback.js"></script>
+</body>
+</html>
+

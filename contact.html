@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Joint Innovation Team</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header class="navbar">
+    <div class="logo">Contact</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="careers.html">Careers</a>
+      <a href="services.html">Services</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <!-- Main Contact Section -->
+  <section class="contact-section">
+    <div class="left-box">
+      <h2>Quick response-</h2>
+      <p>We usually reply within 1 hour on business days to sign an NDA and arrange a discussion.</p>
+
+      <h2>Personalized approach-</h2>
+      <p>You will engage directly with specialists who are experienced in your domain.</p>
+
+      <h2>No pressure-</h2>
+      <p>We're here to explore your needs and provide guidance — whenever you're ready to move forward.</p>
+    </div>
+
+    <div class="form-box">
+      <h2>Let's discuss your needs!</h2>
+      <p>Do you have a question for our specialists, want to discuss your project, or learn more about our expertise? Feel free to send your request using the form below!</p>
+      <form action="https://formspree.io/f/xyzwbkpn" method="POST" enctype="multipart/form-data">
+        <textarea name="message" placeholder="Write your message..." required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Work Email ID" required>
+        <input type="text" name="company" placeholder="Company">
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <select name="country">
+          <option value="">Select Country</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="file" name="attachment">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="right-box">
+      <h3>📍 Bhubaneswar, Odisha, India</h3>
+      <p>📞 +91 6371489826</p>
+      <p>✉️ connect.jitweb@gmail.com</p>
+      <div class="social-links">
+        <a href="https://wa.me/916371489826" target="_blank">
+          <img src="whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/team.jitweb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/" target="_blank">
+          <img src="insta.png" alt="Instagram">
+        </a>
+        <a href="www.linkedin.com/in/biswajeet-behera-88b0582b4"target="_blank">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://facebook.com/" target="_blank">
+          <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="twitter.png" alt="Twitter">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="contact.js"></script>
+</body>
+</html>

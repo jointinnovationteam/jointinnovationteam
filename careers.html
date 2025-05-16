@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Careers - Joint Innovation Team</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="careers.css" />
+  <script defer src="careers.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Careers</div>
+      <div class="menu-icon">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="career-section">
+    <div class="left">
+      <h1 
+      class="animated-heading">🚀Kickstart Your Career with Us-
+    <br>"Internship & Jobs Available"</h1>
+    <h3>At Joint Innovation Team (JIT) We welcome passionate individuals to grow with us. 
+        <br>Our Internship program spans 3 months and unpaid, but offers a valuable experience along with an official certificate upon successful completion.
+        <br>Interns showing dedication and performance will be considered for a paid role after the Internshipperiod.
+        <br>
+        <br>For Full-Time Applicants, We offer project-based payments instead of fixed monthly salaries.
+        <br>As a fully remote company, We believe in flexibility-work from anywhere, anytime.
+        <br>All we need is your commitment and creativity.
+    </h3>
+    </div>
+
+    <div class="right">
+      <div class="job-section">
+        <h2>🧑‍💻 Internship Roles</h2>
+        <ul>
+          <li>Frontend Intern <button onclick="openForm('intern', 'Frontend Intern')">Apply Now</button></li>
+          <li>Backend Intern <button onclick="openForm('intern', 'Backend Intern')">Apply Now</button></li>
+          <li>UI/UX Intern <button onclick="openForm('intern', 'UI/UX Intern')">Apply Now</button></li>
+          <li>HR Intern <button onclick="openForm('intern','HR Intern',)">Apply Now</button></li>
+        </ul>
+
+        <h2>💼 Full-Time Jobs</h2>
+        <ul>
+          <li>Fullstack Developer <button onclick="openForm('fulltime', 'Fullstack Developer')">Apply Now</button></li>
+          <li>HR Manager <button onclick="openForm('fulltime', 'HR Manager')">Apply Now</button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup Form -->
+  <div class="form-popup" id="jobForm">
+    <div class="form-container">
+      <form id="applyForm" action="https://formspree.io/f/xnndoeyo" method="POST" enctype="multipart/form-data">
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+        <h2 id="formTitle">Apply for Position</h2>
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+
+        <label>Qualification:</label>
+        <select name="qualification" required>
+          <option value="">Select</option>
+          <option>+2</option>
+          <option>Diploma</option>
+          <option>UG</option>
+          <option>PG</option>
+          <option>B.Tech</option>
+          <option>M.Tech</option>
+          <option>BCA</option>
+          <option>MCA</option>
+        </select>
+
+        <div class="intern-fields">
+          <label>Laptop Available?</label>
+          <select name="laptop">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+          <label>Wi-Fi Available?</label>
+          <select name="wifi">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+          <label>Willing to work free for 3 months?</label>
+          <select name="unpaid_ok">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+
+        <label>Upload Resume (PDF only):</label>
+        <input type="file" name="resume" accept=".pdf" required />
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

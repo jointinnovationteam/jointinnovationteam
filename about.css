@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #b11377;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 30px;
+  }
+
+  #menu-toggle:checked + .hamburger + nav {
+    display: flex;
+  }
+}
+
+/* Center tagline */
+.center-tagline {
+  text-align: center;
+  font-size: 22px;
+  margin: 30px 20px 10px;
+  color: rgb(255, 208, 0);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about-section h1 {
+  font-size: 36px;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Profile Slider */
+.profile-slider {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.profile-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.profile-card h2 {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.profile-card p {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.socials a img {
+  width: 22px;
+  margin: 5px;
+}
+
+/* Extra Section */
+.extra {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.extra h2 {
+  color: #fff;
+  margin-top: 30px;
+}
+
+.extra p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 16px;
+}
+.socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #ffd700;
+  transition: transform 0.3s;
+}
+
+.socials a:hover {
+  transform: scale(1.1);
+}
+
+.socials a img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
