@@ -142,4 +142,12 @@ button {
   .right-box {
     width: 90%;
   }
+  .download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background: rgb(12, 142, 222);
+  color: black;
+  border-radius: 5px;
+}
 }
